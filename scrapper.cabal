@@ -1,0 +1,28 @@
+name:                scrapper
+version:             0.1.0.0
+synopsis:            Simple project to scrap a website. Scrapper is written in Haskell and website in PHP.
+description:         Please see README.md
+homepage:            https://local-host
+license:             BSD3
+license-file:        LICENSE
+author:              Eric Andrade
+maintainer:          contato@romefeller.com
+copyright:           2016 Eric Andrade
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable scrapper
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  build-depends:       base
+                     , text
+                     , aeson
+                     , lens-aeson
+                     , taggy
+                     , lens
+                     , bytestring
+                     , taggy-lens
+                     , wreq
+                     , random
+                 
