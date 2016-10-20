@@ -92,11 +92,3 @@ getSession = do
          S.withSession $ \sess -> do  
              S.post sess "http://localhost:8080/loginForm.php" userNPass
              return sess
-
-getSessionRomefeller :: IO S.Session
-getSessionRomefeller = do 
-         S.withSession $ \sess -> do  
-             r <- S.get sess "http://romefeller.io"
-             -- print r
-             return sess
-
